@@ -17,16 +17,15 @@ const PainScale = () => {
             </div>
             <div className='slider'>
                 <Slider
-                    aria-label="Temperature"
-                    defaultValue={30}
+                    aria-label="SliderPainScale"
+                    defaultValue={0}
                     getAriaValueText={valuetext}
                     valueLabelDisplay="auto"
-                    step={10}
+                    step={1}
                     marks
-                    min={10}
-                    max={110}
+                    min={0}
+                    max={10}
                 />
-                <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
             </div>
             <div className='description'>
                 <h3>sem dor</h3>
