@@ -1,6 +1,7 @@
 import './style.css';
 import * as React from 'react';
 import SliderPain from './SliderPain';
+import FacesScale from './FacesScale';
 
 
 
@@ -10,6 +11,7 @@ const PainScale = () => {
         <div className='pain-scale'>
             <h3>Em uma escala de 1 à 10, qual o nível da sua dor?</h3>
             <div className='slider'>
+                <FacesScale />
                 <SliderPain className='slider'/>
             </div>
             <div className='description'>
