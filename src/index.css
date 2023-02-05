@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+:root {
+  --white: #FEFEFE;
+  --yellow-primary: #FFF46C;
+  --yellow-secondary: #FFC94E;
+  --orange-primary: #F3C065;
+  --orange-secondary: #FF9E59;
+  --red-primary: #FF5959;
+  --pink-primary: #FF84AD;
+  --pink-secondary: #FF6095;
+  --pink-contrast: #B2003B;
+  --blue-primary: #BCE7FF;
+  --blue-secondary: #20AFFF;
+  --green-primary: #BFFF77;
+  --green-secondary: #9BDD7E;
+  --green-tertiary: #62B13F;
+  --green-contrast: #1F6600;
+  --gray-primary: #B5B5B5;
+  --gray-secondary: #818181;
+  --gray-tertiary: #505050;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
