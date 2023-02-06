@@ -1,6 +1,5 @@
 .pain-scale {
     padding: 3rem 6rem;
-    background-color: var(--gray-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +34,6 @@
     font-size: 2.5rem;
 }
 
-.slider span {
-    color: red;
+.pain-scale .container-slider .slider {
+    width: 100%;
 }

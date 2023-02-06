@@ -8,7 +8,7 @@ function valuetext(value) {
 
 export default function SliderPain() {
   return (
-    <Box sx={{ width: 300 }}>
+    <Box sx={{ width: '100%' }}>
       <Slider
         aria-label="PainValue"
         defaultValue={0}
@@ -18,6 +18,7 @@ export default function SliderPain() {
         marks
         min={0}
         max={10}
+        color='secondary'
       />
     </Box>
   );
