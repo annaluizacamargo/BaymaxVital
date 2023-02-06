@@ -1,0 +1,40 @@
+.pain-scale {
+    padding: 3rem 6rem;
+    background-color: var(--gray-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.pain-scale h3 {
+    font-weight: bold;
+}
+
+.pain-scale .container-slider {
+    width: 100%;
+
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.pain-scale .container-slider .faces span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pain-scale .container-slider .faces span label,
+.pain-scale .container-slider .faces span label span {
+    width: fit-content;
+    height: fit-content;
+}
+
+.pain-scale .container-slider .faces span label span svg {
+    font-size: 2.5rem;
+}
+
+.slider span {
+    color: red;
+}

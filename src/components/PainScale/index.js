@@ -10,13 +10,20 @@ const PainScale = () => {
     return (
         <div className='pain-scale'>
             <h3>Em uma escala de 1 à 10, qual o nível da sua dor?</h3>
-            <div className='slider'>
-                <FacesScale />
-                <SliderPain className='slider'/>
+            <div className='container-slider'>
+                <div className='faces'>
+                    <FacesScale />
+                </div>
+
+                <SliderPain className='slider' />
             </div>
             <div className='description'>
-                <h3>sem dor</h3>
-                <h3>muita dor</h3>
+                <h3>Sem Dor</h3>
+                <h3>Dor Leve</h3>
+                <h3>Dor Moderada</h3>
+                <h3>Dor Forte</h3>
+                <h3>Dor Muito Forte</h3>
+                <h3>Pior Dor Possível</h3>
             </div>
         </div>
     );
