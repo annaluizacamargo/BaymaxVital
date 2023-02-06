@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
   --white: #FEFEFE;
@@ -19,6 +19,7 @@
   --gray-primary: #B5B5B5;
   --gray-secondary: #818181;
   --gray-tertiary: #505050;
+  --black: #000000;
   --font-montserrat: 'Montserrat', sans-serif;
 }
 
