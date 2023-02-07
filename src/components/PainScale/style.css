@@ -46,7 +46,10 @@
 }
 
 .pain-scale .container-slider .slider {
+    padding-left: calc(2.5rem/2);
+    padding-right: calc(2.5rem/2);
     width: 100%;
+    box-sizing: border-box;
 }
 
 .pain-scale .description {
