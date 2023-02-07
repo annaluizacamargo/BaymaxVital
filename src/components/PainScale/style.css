@@ -18,6 +18,14 @@
     box-sizing: border-box;
 }
 
+.pain-scale .container-slider .faces .MuiRating-icon {
+    transform: none;
+    transition: none;
+    scale: 1;
+    pointer-events: none;
+    cursor: default;
+}
+
 .pain-scale .container-slider .faces span {
     display: flex;
     justify-content: space-between;

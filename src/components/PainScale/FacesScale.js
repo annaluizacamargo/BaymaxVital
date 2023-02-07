@@ -18,10 +18,7 @@ import {
 
 const StyledRating = styled(Rating)(({ theme }) => ({
     '& .MuiRating-iconEmpty .MuiSvgIcon-root': {
-        color: theme.palette.action.disabled,
-    },
-    '& .MuiRating-iconEmpty .MuiSvgIcon-root': {
-        color: 'var(--black)',
+        color: theme.palette,
     },
 }));
 
