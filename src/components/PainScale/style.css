@@ -13,7 +13,6 @@
 
 .pain-scale .container-slider {
     width: 100%;
-
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -26,10 +25,14 @@
     cursor: default;
 }
 
-.pain-scale .container-slider .faces span {
+.pain-scale .container-slider .faces .MuiRating-root{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.pain-scale .container-slider .faces span label:has(#highlight-selected-only-empty) {
+    display: none;
 }
 
 .pain-scale .container-slider .faces span label,
