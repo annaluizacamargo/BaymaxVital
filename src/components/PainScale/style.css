@@ -9,11 +9,11 @@
 
 .pain-scale h3 {
     font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 .pain-scale .container-slider {
     width: 100%;
-    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -54,44 +54,44 @@
 
 .pain-scale .description {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 18% 18% 18% 18% 18%;
     height: fit-content;
     align-items: center;
     justify-content: space-between;
     margin: auto 0;
 }
 
-.pain-scale .description h4 {
-    display: block;
-    padding: 0;
+.pain-scale .description h5 {
+    padding: 0 0.5rem;
     text-align: center;
     margin: auto 0;
     word-wrap: break-word;
     color: var(--error);
 }
 
-.pain-scale .description h4 .one {
-    width: calc(100%/11);
+.pain-scale .description h5 .one {
+    min-width: calc(100%/11);
     color: var(--green-secondary);
 }
 
-.pain-scale .description h4 .two {
+.pain-scale .description h5 .two {
     width: calc((100%-(100%/11))/5);
 }
 
-.pain-scale .description h4#zero,
-.pain-scale .description h4#one {
+.pain-scale .description h5#zero,
+.pain-scale .description h5#one {
     color: var(--success);
 }
 
-.pain-scale .description h4#two {
+.pain-scale .description h5#two {
     color: var(--secondary);
 }
 
-.pain-scale .description h4#three {
+.pain-scale .description h5#three {
     color: var(--primary);
 }
 
-.pain-scale .description h4#four {
+.pain-scale .description h5#four {
     color: var(--warning);
 }

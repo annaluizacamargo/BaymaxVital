@@ -19,12 +19,12 @@ const PainScale = () => {
                 </div>
             </div>
             <div className='description'>
-                <h4 className='one' id='zero'>Sem Dor</h4>
-                <h4 className='two' id='one'>Leve</h4>
-                <h4 className='two' id='two'>Moderada</h4>
-                <h4 className='two' id='three'>Forte</h4>
-                <h4 className='two' id='four'>Muito Forte</h4>
-                <h4 className='two' id='five'>Pior Possível</h4>
+                <h5 className='one' id='zero'>Sem Dor</h5>
+                <h5 className='two' id='one'>Leve</h5>
+                <h5 className='two' id='two'>Moderada</h5>
+                <h5 className='two' id='three'>Forte</h5>
+                <h5 className='two' id='four'>Muito Forte</h5>
+                <h5 className='two' id='five'>Pior Possível</h5>
             </div>
         </div>
     );
