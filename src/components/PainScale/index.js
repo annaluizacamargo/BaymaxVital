@@ -14,16 +14,17 @@ const PainScale = () => {
                 <div className='faces'>
                     <FacesScale />
                 </div>
-
-                <SliderPain className='slider' />
+                <div className='slider'>
+                    <SliderPain />
+                </div>
             </div>
             <div className='description'>
-                <h3>Sem Dor</h3>
-                <h3>Dor Leve</h3>
-                <h3>Dor Moderada</h3>
-                <h3>Dor Forte</h3>
-                <h3>Dor Muito Forte</h3>
-                <h3>Pior Dor Possível</h3>
+                <h4>Sem Dor</h4>
+                <h4>Leve</h4>
+                <h4>Moderada</h4>
+                <h4>Forte</h4>
+                <h4>Muito Forte</h4>
+                <h4>Pior Possível</h4>
             </div>
         </div>
     );

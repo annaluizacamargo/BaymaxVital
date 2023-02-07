@@ -37,3 +37,21 @@
 .pain-scale .container-slider .slider {
     width: 100%;
 }
+
+.pain-scale .description {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.pain-scale .description h4{    
+    display: block;
+    width: 9rem;
+    padding: 0;
+    text-align: center;
+    margin: auto 0;
+    word-wrap: break-word;
+}
