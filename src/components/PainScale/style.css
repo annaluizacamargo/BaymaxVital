@@ -25,7 +25,7 @@
     cursor: default;
 }
 
-.pain-scale .container-slider .faces .MuiRating-root{
+.pain-scale .container-slider .faces .MuiRating-root {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -61,11 +61,37 @@
     margin: auto 0;
 }
 
-.pain-scale .description h4{    
+.pain-scale .description h4 {
     display: block;
-    width: 9rem;
     padding: 0;
     text-align: center;
     margin: auto 0;
     word-wrap: break-word;
+    color: var(--error);
+}
+
+.pain-scale .description h4 .one {
+    width: calc(100%/11);
+    color: var(--green-secondary);
+}
+
+.pain-scale .description h4 .two {
+    width: calc((100%-(100%/11))/5);
+}
+
+.pain-scale .description h4#zero,
+.pain-scale .description h4#one {
+    color: var(--success);
+}
+
+.pain-scale .description h4#two {
+    color: var(--secondary);
+}
+
+.pain-scale .description h4#three {
+    color: var(--primary);
+}
+
+.pain-scale .description h4#four {
+    color: var(--warning);
 }

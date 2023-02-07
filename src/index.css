@@ -21,6 +21,11 @@
   --gray-tertiary: #505050;
   --black: #000000;
   --font-montserrat: 'Montserrat', sans-serif;
+  --success: #3B853F;
+  --secondary: #9C27B0;
+  --primary: #1E79D3;
+  --warning: #ED6C02;
+  --error: #D32F2F;
 }
 
 
