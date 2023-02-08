@@ -3,25 +3,27 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import { useState } from "react";
 
-function valuetext(value) {
-  return value;
-}
-
 export default function SliderPain() {
   const [colorSlider, setColorSlider] = useState('');
 
   const OnChange = (props) => {
-    const valueSlider = props.target.value;  
-    if (valueSlider == 0 || valueSlider == 1 || valueSlider == 2) {
-      setColorSlider('success')
-    } else if (valueSlider == 3 || valueSlider == 4) {
-      setColorSlider('secondary')
-    } else if (valueSlider == 5 || valueSlider == 6) {
-      setColorSlider('primary')
-    } else if (valueSlider == 7 || valueSlider == 8) {
-      setColorSlider('warning')
-    } else {
-      setColorSlider('error')
+    const valueSlider = props.target.value;
+
+    switch (true) {
+      case (valueSlider <= 2):
+        setColorSlider('success');
+        break;
+      case (valueSlider <= 4):
+        setColorSlider('secondary');
+        break;
+      case (valueSlider <= 6):
+        setColorSlider('primary');
+        break;
+      case (valueSlider <= 8):
+        setColorSlider('warning');
+        break;
+      default:
+        setColorSlider('error');
     }
   }
 
@@ -30,7 +32,6 @@ export default function SliderPain() {
       <Slider
         aria-label="PainValue"
         defaultValue={0}
-        getAriaValueText={valuetext}
         valueLabelDisplay="auto"
         step={1}
         marks
