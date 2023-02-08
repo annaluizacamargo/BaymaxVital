@@ -1,0 +1,49 @@
+.voice-recording {
+    display: flex;
+}
+
+.voice-recording .transcription {
+    margin: 3rem 2rem;
+    min-height: 100%;
+    width: 70%;
+    padding: 1.5rem;
+    text-align: justify;
+    background-color: var(--orange-primary);
+}
+
+.voice-recording .buttons {
+    margin: 3rem 2rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-recording .buttons .icon {
+    color: var(--orange-primary);
+    height: 4rem;
+    padding: 1rem;
+}
+
+.voice-recording .buttons .icon:hover {
+    color: var(--orange-secondary);
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.voice-recording .buttons button {
+    width: fit-content;
+    background-color: var(--green-secondary);
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 20px;
+    border-color: var(--green-secondary);
+}
+
+.voice-recording .buttons button:hover {
+    background-color: var(--green-tertiary);
+    cursor: pointer;
+}
