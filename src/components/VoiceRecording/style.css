@@ -8,7 +8,6 @@
     width: 70%;
     padding: 1.5rem;
     text-align: justify;
-    background-color: var(--orange-primary);
 }
 
 .voice-recording .buttons {
@@ -22,28 +21,33 @@
 }
 
 .voice-recording .buttons .icon {
-    color: var(--orange-primary);
     height: 4rem;
     padding: 1rem;
+    border-radius: 30rem;
+    margin: 1rem;
 }
 
 .voice-recording .buttons .icon:hover {
-    color: var(--orange-secondary);
-    scale: 1.1;
+    filter: drop-shadow(2px 2px 0px #3f3f3f71);
+    cursor: pointer;
+    color: red;
+}
+
+.voice-recording .buttons .icon:active {
+    background-color: aqua;
     cursor: pointer;
 }
 
 .voice-recording .buttons button {
     width: fit-content;
     background-color: var(--green-secondary);
-    padding: 1rem;
     font-weight: bolder;
     font-size: medium;
-    border-radius: 20px;
-    border-color: var(--green-secondary);
+    border: 2px var(--green-secondary) outset;
 }
 
 .voice-recording .buttons button:hover {
     background-color: var(--green-tertiary);
     cursor: pointer;
+    border: 2px var(--green-secondary) inset;
 }
