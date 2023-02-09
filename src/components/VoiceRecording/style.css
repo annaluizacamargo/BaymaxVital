@@ -20,26 +20,29 @@
     justify-content: center;
 }
 
-.voice-recording .buttons .icon {
-    height: 4rem;
-    padding: 1rem;
+.voice-recording .buttons .audio-recorder {
+    margin-bottom: 1rem;
+    background-color: var(--green-primary);
+    width: fit-content;
+    height: fit-content;
     border-radius: 30rem;
-    margin: 1rem;
+    border: 2px var(--green-secondary) outset;
 }
 
-.voice-recording .buttons .icon:hover {
-    filter: drop-shadow(2px 2px 0px #3f3f3f71);
-    cursor: pointer;
-    color: red;
+.voice-recording .buttons img.audio-recorder-mic {
+    filter: brightness(0.1) invert(.3) sepia(.1) hue-rotate(42deg) saturate(15000%);
+    height: 2rem;
 }
 
-.voice-recording .buttons .icon:active {
-    background-color: aqua;
-    cursor: pointer;
+.voice-recording .buttons div.audio-recorder.recording {
+    width: fit-content;
+}
+
+.voice-recording .buttons span.audio-recorder-status {
+    display: none;
 }
 
 .voice-recording .buttons button {
-    width: fit-content;
     background-color: var(--green-secondary);
     font-weight: bolder;
     font-size: medium;
