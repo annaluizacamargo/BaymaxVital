@@ -1,6 +1,8 @@
 .voice-recording {
     display: flex;
     padding: 2rem;
+    height: fit-content;
+    box-sizing: border-box;
 }
 
 .voice-recording .transcription {
