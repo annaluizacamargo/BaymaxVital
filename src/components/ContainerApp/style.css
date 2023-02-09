@@ -1,0 +1,40 @@
+html {
+    background-color: var(--orange-primary);
+}
+
+.container-app {
+    background-color: var(--orange-primary);
+    padding: 1rem;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-app .btn-return {
+    background-color: var(--orange-secondary);
+    padding: 0.5rem 0.75rem;
+    border-radius: 30px;
+    border: 2px var(--orange-secondary) outset;
+}
+
+.container-app .btn-return:hover {
+    background-color: var(--warning);
+    border: 2px var(--orange-secondary) inset;
+    cursor: pointer;
+}
+
+.container-app div.box {
+    background-color: var(--white);
+    margin: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    height: fit-content;
+}
