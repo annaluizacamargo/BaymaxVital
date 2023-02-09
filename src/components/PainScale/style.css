@@ -6,6 +6,7 @@
     text-align: center;
     justify-content: center;
     height: 40%;
+    box-sizing: border-box;
 }
 
 .pain-scale h3 {
@@ -61,6 +62,7 @@
     align-items: center;
     justify-content: space-between;
     margin: auto 0;
+    padding-bottom: 1rem;
 }
 
 .pain-scale .description h5 {
