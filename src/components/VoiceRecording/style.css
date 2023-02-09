@@ -1,9 +1,11 @@
 .voice-recording {
     display: flex;
+    padding: 2rem;
 }
 
 .voice-recording .transcription {
-    margin: 3rem 2rem;
+    margin: 0;
+    margin-right: 2rem;
     min-height: 100%;
     width: 70%;
     padding: 1.5rem;
@@ -11,8 +13,6 @@
 }
 
 .voice-recording .buttons {
-    margin: 3rem 2rem;
-    margin-left: 0;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -31,7 +31,8 @@
 
 .voice-recording .buttons img.audio-recorder-mic {
     filter: brightness(0.1) invert(.3) sepia(.1) hue-rotate(42deg) saturate(15000%);
-    height: 2rem;
+    height: 1.5rem;
+    padding: 0.5rem;
 }
 
 .voice-recording .buttons div.audio-recorder.recording {
