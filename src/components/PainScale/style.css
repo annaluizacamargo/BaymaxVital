@@ -134,9 +134,10 @@
     }
 
     .pain-scale .container-slider .slider span.MuiSlider-root {
-        height: 27rem;
+        height: 25rem;
         margin: 0;
         padding: 0;
+        margin-top: 1rem;
     }
     
     .pain-scale div.description {
