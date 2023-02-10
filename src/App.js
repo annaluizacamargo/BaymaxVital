@@ -1,12 +1,12 @@
 import './App.css';
-import ContainerApp from './components/ContainerApp/ConteinerApp';
+import BadScale from './components/ContainerApp/BadScale';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       </header>
-      <ContainerApp />
+      <BadScale />
     </div>
   );
 }
