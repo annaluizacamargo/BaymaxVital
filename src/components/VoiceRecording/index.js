@@ -3,18 +3,21 @@ import { Button } from '@mui/material';
 import React, { useState } from "react";
 import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder';
 
-const addAudioElement = (blob) => {
+const addAudioElement = (blob, namePatient) => {
     const url = URL.createObjectURL(blob);
     const audio = document.createElement("audio");
     audio.src = url;
     audio.controls = true;
     const addBtn = document.querySelector('.audio')
     addBtn.appendChild(audio);
+    localStorage.setItem(namePatient, JSON.stringify(blob))
+    console.log(blob)
 };
 
 const VoiceRecording = (props) => {
     const colorPrimary = `var(--${props.color}-primary)`;
     //const colorSecondary = `var(--${props.color}-secondary)`;
+    const namePatient = props.namePatient
     const recorderControls = useAudioRecorder();
 
     return (
@@ -22,7 +25,7 @@ const VoiceRecording = (props) => {
             <div className='buttons'>
                 <AudioRecorder
                     className='audio-recorder'
-                    onRecordingComplete={(blob) => addAudioElement(blob)}
+                    onRecordingComplete={(blob) => addAudioElement(blob, namePatient)}
                     recorderControls={recorderControls}
                     style={{ backgroundColor: colorPrimary }}
                 />
