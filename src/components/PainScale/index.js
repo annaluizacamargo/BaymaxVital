@@ -17,14 +17,14 @@ const PainScale = () => {
                 <div className='slider'>
                     <SliderPain />
                 </div>
-            </div>
-            <div className='description'>
-                <h5 className='one' id='zero'>Sem Dor</h5>
-                <h5 className='two' id='one'>Leve</h5>
-                <h5 className='two' id='two'>Moderada</h5>
-                <h5 className='two' id='three'>Forte</h5>
-                <h5 className='two' id='four'>Muito Forte</h5>
-                <h5 className='two' id='five'>Pior Possível</h5>
+                <div className='description'>
+                    <h5 className='one' id='zero'>Sem Dor</h5>
+                    <h5 className='two' id='one'>Leve</h5>
+                    <h5 className='two' id='two'>Moderada</h5>
+                    <h5 className='two' id='three'>Forte</h5>
+                    <h5 className='two' id='four'>Muito Forte</h5>
+                    <h5 className='two' id='five'>Pior Possível</h5>
+                </div>                
             </div>
         </div>
     );

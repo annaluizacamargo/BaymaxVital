@@ -5,6 +5,12 @@ import { useState } from "react";
 
 export default function SliderPain() {
   const [colorSlider, setColorSlider] = useState('');
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 760;
+
+  React.useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
 
   const OnChange = (props) => {
     const valueSlider = props.target.value;
@@ -39,6 +45,7 @@ export default function SliderPain() {
         max={10}
         color={colorSlider || 'success'}
         onChange={OnChange}
+        orientation={width < breakpoint ? 'vertical' : 'horizontal'}
       />
     </Box>
   );

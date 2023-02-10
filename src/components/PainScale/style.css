@@ -98,3 +98,46 @@
 .pain-scale .description h5#four {
     color: var(--warning);
 }
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    .pain-scale .container-slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .pain-scale .container-slider .faces .MuiRating-root {
+        flex-direction: column-reverse;
+    }
+
+    .pain-scale .container-slider .slider {
+        margin: auto 0;
+        padding: 0 1rem;
+        width: fit-content;
+    }
+
+    .pain-scale .container-slider .slider span.MuiSlider-root {
+        height: 27rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .pain-scale div.description {
+        padding: 0;
+        padding-top: 2rem;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 27rem;
+    }
+
+    .pain-scale div.description h5 {
+        margin: 0;
+    }
+}
