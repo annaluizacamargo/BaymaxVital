@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    box-sizing: border-box;
 }
 
 .voice-recording .buttons div.audio audio {
@@ -52,6 +53,7 @@
 }
 
 .voice-recording .buttons button {
+    margin-top: 1rem;
     background-color: var(--green-secondary);
     font-weight: bolder;
     font-size: medium;
@@ -62,4 +64,19 @@
     background-color: var(--green-tertiary);
     cursor: pointer;
     border: 2px var(--green-secondary) inset;
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    .voice-recording .buttons {
+        flex-direction: column;
+    }
+
+    .voice-recording .buttons div.audio {
+        min-height: 5rem;
+        width: 90%;
+        box-sizing: border-box;
+    }
 }
