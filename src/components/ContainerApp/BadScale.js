@@ -11,8 +11,15 @@ const ContainerApp = () => {
         <div className='container-app'>
             <FontAwesomeIcon icon={faChevronLeft} className='btn-return' />
             <div className='box'>
-                <BoxBaymax />
-                <PainScale />
+                <BoxBaymax
+                    img='./images/baymax-bad.svg'
+                    text='Porque você está se sentindo assim? O que podemos fazer para você se sentir melhor?'
+                />
+
+                <VoiceRecording
+                    color='blue'
+                    namePatient='Anna'
+                />
             </div>
         </div>
     )
