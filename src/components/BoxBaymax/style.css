@@ -43,3 +43,25 @@
     text-align: center;
     font-weight: normal;
 }
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    .box-baymax {
+        align-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .box-baymax div.img-baymax {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .box-baymax div.img-baymax img {
+        margin: 0 auto;
+    }
+    
+    .box-baymax div.box-text {
+        padding: 2rem;
+        width: 100%;
+    }
+}
