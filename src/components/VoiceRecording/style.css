@@ -5,21 +5,12 @@
     box-sizing: border-box;
 }
 
-.voice-recording .transcription {
-    margin: 0;
-    margin-right: 2rem;
-    min-height: 100%;
-    width: 70%;
-    padding: 1.5rem;
-    text-align: justify;
-}
-
 .voice-recording .buttons {
     display: flex;
-    flex-direction: column;
-    width: 30%;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .voice-recording .buttons .audio-recorder {
@@ -43,6 +34,21 @@
 
 .voice-recording .buttons span.audio-recorder-status {
     display: none;
+}
+
+.voice-recording .buttons div.audio {
+    width: 50%;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.voice-recording .buttons div.audio audio {
+    padding: 0.5rem 0;
 }
 
 .voice-recording .buttons button {
