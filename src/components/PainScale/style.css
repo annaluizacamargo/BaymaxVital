@@ -99,6 +99,20 @@
     color: var(--warning);
 }
 
+.pain-scale button {
+    background-color: var(--green-secondary);
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px var(--green-secondary) outset;
+}
+
+.pain-scale button:hover {
+    background-color: var(--green-tertiary);
+    cursor: pointer;
+    border: 2px var(--green-secondary) inset;
+}
+
+
 
 /*Responsividade*/
 @media (max-width: 759px) {
@@ -139,5 +153,9 @@
 
     .pain-scale div.description h5 {
         margin: 0;
+    }
+
+    .pain-scale button {
+        margin-top: 2rem;
     }
 }

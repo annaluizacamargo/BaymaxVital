@@ -2,8 +2,7 @@ import './style.css';
 import * as React from 'react';
 import SliderPain from './SliderPain';
 import FacesScale from './FacesScale';
-
-
+import { Button } from '@mui/material';
 
 const PainScale = () => {
     console.log('PainScale');
@@ -24,8 +23,9 @@ const PainScale = () => {
                     <h5 className='two' id='three'>Forte</h5>
                     <h5 className='two' id='four'>Muito Forte</h5>
                     <h5 className='two' id='five'>Pior Possível</h5>
-                </div>                
+                </div>
             </div>
+            <Button variant="btnConfirm">Confirmar</Button>
         </div>
     );
 };
