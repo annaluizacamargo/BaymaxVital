@@ -6,14 +6,38 @@ import { Button } from '@mui/material';
 
 const PainScale = () => {
     const [painValue, setPainValue] = React.useState(0)
-    //const [colorSlider, setColorSlider] = useState('');
+    const [colorSlider, setColorSlider] = React.useState('');
+
+    const changeColor = (painValue) => {
+        switch (true) {
+            case (painValue <= 3):
+              setColorSlider('success');
+              break;
+            case (painValue <= 5):
+              setColorSlider('secondary');
+              break;
+            case (painValue <= 7):
+              setColorSlider('primary');
+              break;
+            case (painValue <= 9):
+              setColorSlider('warning');
+              break;
+            default:
+              setColorSlider('error');
+        }
+    }
 
     const changeValue = (event) => {
         const targetValue = event.target.value
         //console.log(target.value)
         setPainValue(parseInt(targetValue))
+        changeColor(targetValue)
 
+        
+        console.log(targetValue)
+        console.log(colorSlider)
 
+        //console.log('now', colorSlider)
     }
 
     return (
@@ -24,7 +48,7 @@ const PainScale = () => {
                     <FacesScale value={painValue} changeValue={changeValue} />
                 </div>
                 <div className='slider'>
-                    <SliderPain value={painValue} changeValue={changeValue} />
+                    <SliderPain value={painValue} changeValue={changeValue} colorSlider={colorSlider || 'success'}/>
                 </div>
                 <div className='description'>
                     <h5 className='one' id='zero'>Sem Dor</h5>

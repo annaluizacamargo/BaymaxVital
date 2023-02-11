@@ -4,7 +4,8 @@ import Slider from '@mui/material/Slider';
 import { useState } from "react";
 
 export default function SliderPain(props) {
-  const [colorSlider, setColorSlider] = useState('');
+  //const [colorSlider, setColorSlider] = useState('');
+  const colorSlider = props.colorSlider
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 760;
   const functionChangeValue = props.changeValue
@@ -18,25 +19,6 @@ export default function SliderPain(props) {
     const valueSlider = event.target.value;    
     console.log('usestate', painValue)
     console.log('value', valueSlider)
-
-
-    switch (true) {
-      case (painValue <= 2):
-        setColorSlider('success');
-        break;
-      case (painValue <= 4):
-        setColorSlider('secondary');
-        break;
-      case (painValue <= 6):
-        setColorSlider('primary');
-        break;
-      case (painValue <= 8):
-        setColorSlider('warning');
-        break;
-      default:
-        setColorSlider('error');
-    }
-
     functionChangeValue(event)
   }
 
