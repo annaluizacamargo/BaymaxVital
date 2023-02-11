@@ -79,7 +79,7 @@ IconContainer.propTypes = {
 };
 
 export default function RadioGroupRating(props) {
-    const functionChangeValue = props.changeValue
+    const functionChangeValue = props.changeValue;
 
     return (
         <StyledRating
