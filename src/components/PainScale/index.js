@@ -3,10 +3,12 @@ import * as React from 'react';
 import SliderPain from './SliderPain';
 import FacesScale from './FacesScale';
 import { Button } from '@mui/material';
+import { useNavigate } from "react-router-dom";
 
 const PainScale = () => {
     const [painValue, setPainValue] = React.useState(0);
     const [colorSlider, setColorSlider] = React.useState('');
+    const navigate = useNavigate();
 
     const changeColor = (painValue) => {
         switch (true) {
@@ -52,7 +54,7 @@ const PainScale = () => {
                     <h5 className='two' id='five'>Pior Possível</h5>
                 </div>
             </div>
-            <Button variant="btnConfirm">Confirmar</Button>
+            <Button variant="btnConfirm" onClick={() => painValue < 4? navigate('/good-scale') : navigate('/bad-scale')}>Confirmar</Button>
         </div>
     );
 };
