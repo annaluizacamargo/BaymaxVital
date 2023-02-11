@@ -2,6 +2,7 @@ import './style.css';
 import { Button } from '@mui/material';
 import React, { useState } from "react";
 import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder';
+import { useNavigate } from "react-router-dom";
 
 const addAudioElement = (blob, namePatient) => {
     const url = URL.createObjectURL(blob);
@@ -15,8 +16,8 @@ const addAudioElement = (blob, namePatient) => {
 };
 
 const VoiceRecording = (props) => {
+    const navigate = useNavigate();
     const colorPrimary = `var(--${props.color}-primary)`;
-    //const colorSecondary = `var(--${props.color}-secondary)`;
     const namePatient = props.namePatient
     const recorderControls = useAudioRecorder();
 
@@ -31,7 +32,7 @@ const VoiceRecording = (props) => {
                 />
                 <div className='audio' style={{ backgroundColor: colorPrimary }}>
                 </div>
-                <Button variant="btnConfirm">Confirmar</Button>
+                <Button variant="btnConfirm" onClick={() => navigate('/')}>Confirmar</Button>
             </div>
         </div>
     );
