@@ -5,16 +5,23 @@ import FacesScale from './FacesScale';
 import { Button } from '@mui/material';
 
 const PainScale = () => {
-    console.log('PainScale');
+    const [painValue, setPainValue] = React.useState(0)
+    
+    const changeValue = (event) => {
+        console.log(event.target.textContent)
+        console.log('changeValue')
+        setPainValue(parseInt(event.target.textContent))
+    }
+
     return (
         <div className='pain-scale'>
             <h3>Em uma escala de 1 à 10, qual o nível da sua dor?</h3>
             <div className='container-slider'>
                 <div className='faces'>
-                    <FacesScale />
+                    <FacesScale value={painValue} changeValue={changeValue} />
                 </div>
                 <div className='slider'>
-                    <SliderPain />
+                    <SliderPain value={painValue} changeValue={changeValue} />
                 </div>
                 <div className='description'>
                     <h5 className='one' id='zero'>Sem Dor</h5>
