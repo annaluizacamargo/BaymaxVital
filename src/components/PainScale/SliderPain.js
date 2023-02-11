@@ -7,54 +7,54 @@ export default function SliderPain(props) {
   const [colorSlider, setColorSlider] = useState('');
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 760;
+  const functionChangeValue = props.changeValue
+  const painValue = props.value
 
   React.useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
 
-  const OnChange = (props) => {
-    const valueSlider = props.target.value;
+  const OnChange = (event) => {
+    const valueSlider = event.target.value;    
+    console.log('usestate', painValue)
+    console.log('value', valueSlider)
 
 
     switch (true) {
-      case (valueSlider <= 2):
+      case (painValue <= 2):
         setColorSlider('success');
         break;
-      case (valueSlider <= 4):
+      case (painValue <= 4):
         setColorSlider('secondary');
         break;
-      case (valueSlider <= 6):
+      case (painValue <= 6):
         setColorSlider('primary');
         break;
-      case (valueSlider <= 8):
+      case (painValue <= 8):
         setColorSlider('warning');
         break;
       default:
         setColorSlider('error');
     }
+
+    functionChangeValue(event)
   }
 
-  const painValue = props.value
-  const functionChangeValue = props.changeValue
-  console.log('painValue', painValue)
-  console.log('tipo', painValue)
+
 
   return (
     <Box sx={{ width: '100%' }}>
       <Slider
         aria-label="PainValue"
         value={painValue}
-        valueLabelDisplay="auto"
         step={1}
         marks
-        min={0}
-        max={10}
+        min={1}
+        max={11}
         color={colorSlider || 'success'}
-        onChange={OnChange}
+        onChange={functionChangeValue}
         orientation={width < breakpoint ? 'vertical' : 'horizontal'}
-        onClick={functionChangeValue}
       />
     </Box>
   );
 }
-//(value) => console.log(value.target.textContent)

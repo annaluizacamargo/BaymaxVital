@@ -89,9 +89,7 @@ export default function RadioGroupRating(props) {
             getLabelText={(value) => customIcons[value].label}
             max={11}
             highlightSelectedOnly
-            onClick={functionChangeValue}
+            onChange={functionChangeValue}
         />
     );
 }
-
-//onClick={(value) => console.log(value.target.textContent)}

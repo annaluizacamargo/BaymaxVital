@@ -6,11 +6,14 @@ import { Button } from '@mui/material';
 
 const PainScale = () => {
     const [painValue, setPainValue] = React.useState(0)
-    
+    //const [colorSlider, setColorSlider] = useState('');
+
     const changeValue = (event) => {
-        console.log(event.target.textContent)
-        console.log('changeValue')
-        setPainValue(parseInt(event.target.textContent))
+        const targetValue = event.target.value
+        //console.log(target.value)
+        setPainValue(parseInt(targetValue))
+
+
     }
 
     return (
