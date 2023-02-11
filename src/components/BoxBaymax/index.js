@@ -1,7 +1,6 @@
 import './style.css';
 
 const BoxBaymax = (props) => {
-    console.log(props);
     const imgBaymax = props.img;
     const txtBox = props.text;
     return (
