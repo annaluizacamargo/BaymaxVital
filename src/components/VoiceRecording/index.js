@@ -9,10 +9,9 @@ const addAudioElement = (blob, namePatient) => {
     const audio = document.createElement("audio");
     audio.src = url;
     audio.controls = true;
-    const addBtn = document.querySelector('.audio')
+    const addBtn = document.querySelector('.audio');
     addBtn.appendChild(audio);
-    localStorage.setItem(namePatient, JSON.stringify(blob))
-    console.log(blob)
+    //localStorage.setItem(namePatient, JSON.stringify(blob))
 };
 
 const VoiceRecording = (props) => {
@@ -32,7 +31,11 @@ const VoiceRecording = (props) => {
                 />
                 <div className='audio' style={{ backgroundColor: colorPrimary }}>
                 </div>
-                <Button variant="btnConfirm" onClick={() => navigate('/baymax-vital-end')}>Confirmar</Button>
+                <Button variant="btnConfirm" onClick={() => {
+                    document.getElementsByTagName('audio').length > 0
+                        ? navigate('/baymax-vital-end')
+                        : alert('Queremos melhorar cada vez mais, por favor clique no botão do microfone e nos diga o que podemos fazer para te deixar melhor :)')
+                }}>Confirmar</Button>
             </div>
         </div>
     );
