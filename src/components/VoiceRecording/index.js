@@ -34,7 +34,7 @@ const VoiceRecording = (props) => {
                 <Button variant="btnConfirm" onClick={() => {
                     document.getElementsByTagName('audio').length > 0
                         ? navigate('/baymax-vital-end')
-                        : alert('Queremos melhorar cada vez mais, por favor clique no botão do microfone e nos diga o que podemos fazer para te deixar melhor :)')
+                        : alert('Queremos melhorar cada vez mais, por favor clique no botão do microfone e nos diga o que podemos fazer para te deixar melhor 🥰')
                 }}>Confirmar</Button>
             </div>
         </div>
