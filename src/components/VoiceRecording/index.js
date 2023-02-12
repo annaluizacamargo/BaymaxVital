@@ -1,6 +1,6 @@
 import './style.css';
 import { Button } from '@mui/material';
-import React, { useState } from "react";
+import React from "react";
 import { AudioRecorder, useAudioRecorder } from 'react-audio-voice-recorder';
 import { useNavigate } from "react-router-dom";
 
@@ -32,7 +32,7 @@ const VoiceRecording = (props) => {
                 />
                 <div className='audio' style={{ backgroundColor: colorPrimary }}>
                 </div>
-                <Button variant="btnConfirm" onClick={() => navigate('/')}>Confirmar</Button>
+                <Button variant="btnConfirm" onClick={() => navigate('/baymax-vital-end')}>Confirmar</Button>
             </div>
         </div>
     );
