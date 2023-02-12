@@ -42,6 +42,7 @@
     margin: 0;
     text-align: center;
     font-weight: normal;
+    max-width: 25rem;
 }
 
 /*Responsividade*/
