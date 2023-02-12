@@ -1,0 +1,70 @@
+.container-app div.box-baymax-end {
+    width: 100%;
+    height: fit-content;
+    max-height: 24rem;
+    background-color: var(--yellow-primary);
+    margin: 2rem;
+    box-sizing: border-box;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.container-app div.box-baymax-end div.img-baymax {
+    height: fit-content;
+    width: 50%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-end;
+    flex-direction: row-reverse
+}
+
+.container-app div.box-baymax-end div.img-baymax img {
+    max-width: 100%;
+    max-height: 20rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+.container-app div.box-baymax-end div.box-text {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-left: 0.5rem;
+    align-items: flex-start;
+}
+
+.container-app div.box-baymax-end div.box-text h3 {
+    max-width: 25rem;
+    background-color: var(--white);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 0;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container-app div.box-baymax-end button.btn-end {
+    background-color: var(--green-secondary);
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px var(--green-secondary) outset;
+    width: fit-content;
+    box-sizing: border-box;
+    margin: 0 8rem;
+}
+
+.container-app .box-baymax-end button.btn-end:hover {
+    background-color: var(--green-tertiary);
+    cursor: pointer;
+    border: 2px var(--green-secondary) inset;
+}
