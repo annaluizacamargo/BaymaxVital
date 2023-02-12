@@ -68,3 +68,46 @@
     cursor: pointer;
     border: 2px var(--green-secondary) inset;
 }
+
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+
+    .container-app div.box-baymax-end {
+        width: 100%;
+        max-height: fit-content;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2rem 0;
+    }
+
+    .container-app div.box-baymax-end div.img-baymax {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .container-app div.box-baymax-end div.img-baymax img {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .container-app div.box-baymax-end div.box-text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .container-app div.box-baymax-end div.box-text h3 {
+        margin-bottom: 1rem;
+        height: fit-content;
+    }
+
+    .container-app div.box-baymax-end button.btn-end {
+        margin: 0;
+    }
+}
