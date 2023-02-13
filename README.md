@@ -12,24 +12,24 @@ Elaborar um site web responsivo para facilitar a mensuração da dor na pediatri
 <br><br>
 
 
-## 🎯 Motivação
+## 🏩 Motivação
 - Aproximadamente em 2015 quando assisti a animação “Operação Big Hero” da Disney me encantei pelo Baymax, principalmente por ser um personagem cativante e acolhedor, que une a saúde com tecnologia de forma humanizada.
 - Durante a graduação em enfermagem, tive a oportunidade de conhecer e ver a aplicabilidade da [Robô Laura](https://laura-br.com/), bem como de trabalhar no Hospital Pequeno Príncipe, o que me fizeram despertar meu amor pela pediatria, e, principalmente, pela valorização de um sinal vital tão importante, mas muitas vezes negligenciado, que é a dor.
 - Sendo assim, resolvi unir meu amor pelo cuidado e pela tecnologia, e desenvolvi o BaymaxVital, uma forma visual de avaliar a dor na pediatria de forma lúdica, utilizando a “Wong–Baker Faces Pain Rating Scale".
 <br><br>
 
 
-## 🎯 Design
+## 🎨 Design
 Todos os desenhos do Baymax, bem como o design, foram feitos por mim utilizando o [Figma](https://www.figma.com/file/DjW82a3ghtOBIzUzU3yZGY/BaymaxVital?node-id=110%3A295&t=sPAu1QuffWwPMGZh-1), e caso queira saber um pouquinho mais do processo de elaboração e criação, fiz um breve benchmarking, elenquei possíveis referências e ideias de layout, escolhi as cores que possuíssem acessibilidade visual, e todo esse trajeto até chegar neste resultado final é possível visualizar no meu repositório do [Figma](https://www.figma.com/file/DjW82a3ghtOBIzUzU3yZGY/BaymaxVital?node-id=110%3A295&t=sPAu1QuffWwPMGZh-1).
 <br><br>
 
 
-## 🎯 Aplicabilidade
+## 🩺 Aplicabilidade
 - Dentro do ambiente hospitalar a aferição dos Sinais Vitais dos Pacientes sempre está presente, sendo eles = pressão arterial, frequência cardíaca, frequência respiratória, temperatura e a **dor**. Entretanto, este último é um sinal pessoal e subjetivo, de difícil mensuração, sendo afetado por diversos fatores levando em consideração a complexidade das dimensões humanas.
 - Sendo assim, a ideia deste projeto é facilitar a interpretação da dor tendo como público alvo crianças com idade de 3 anos ou mais.
 - Nele, além de avaliar a dor de 0 (ausência de dor) até 10 (pior dor possível), o profissional (seja médico ou da equipe de enfermagem) que esteja aplicando a escala poderá deixar um áudio registrado do motivo que ocasionou determinado score na criança (podendo ser gravado pela própria criança ou pela fala do profissional), bem como o que pode ser melhorado para a mesma se sentir melhor, tornando este momento algo lúdico e humanizado.
-- E bom, falar de saúde é também falar de inclusão, sendo assim o projeto teve como base alternância de cores no Slider, bem como representaçao visual de face por Emojis, com um personagem fofo e acolhedor e cores claras e coloridas.
-- É válido destacar que, para um melhor uso nos casos de restrições, o profissional que esteja aplicando a escala pode promover outros meios de avaliação, como pedindo para a criança demonstrar com exressões faciais a dor; pedir para apontar o que está incomodando; dentre outras ações, sempre envolvendo o familiar no cuidado.
+- E, bom, falar de saúde é também falar de inclusão, sendo assim o projeto teve como base alternância de cores no Slider, bem como representação visual de face por Emojis, com um personagem fofo e acolhedor e cores claras e coloridas.
+- É válido destacar que, para um melhor uso nos casos de restrições, o profissional que esteja aplicando a escala pode promover outros meios de avaliação, como pedindo para a criança demonstrar com expressões faciais a dor; pedir para apontar o que está incomodando; dentre outras ações, sempre envolvendo o familiar no cuidado.
 <br><br>
 
 
