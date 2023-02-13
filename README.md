@@ -39,7 +39,7 @@ Tive a oportunidade de consolidar alguns conceitos de =
 > - CSS (referenciar classes e passar estilos como props de pai para filho).
 > - ReactJS (routes; utilização dos Hook’s; criação de componentes; referenciar função, definindo a função no componente pai para ser executada no componente filho).
 
-Meu maior aprendizado neste projeto foi referente a utilização do Router, bem como adaptar componentes prontos para a minha necessidade, lendo bastante a documentação e navegando dentro dos arquivos utilizando a tecla de atalho { "Ctrl + clique" }.
+Meu maior aprendizado neste projeto foi referente a utilização do Router, bem como adaptar componentes prontos para a minha necessidade, lendo bastante a documentação e navegando dentro dos arquivos utilizando a tecla de atalho ```"Ctrl + clique"```.
 <br><br>
 
 
