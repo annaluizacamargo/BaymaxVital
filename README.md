@@ -63,9 +63,27 @@ VÍDEO AQUI !!!!!!!!!!!!!!!!!!!!!!!!!!!
 <div style="display: inline_block">
   <img align="left" alt="Anna-pic" height="150" style="border-radius:50px;" src="https://user-images.githubusercontent.com/100868704/218369216-c2cd411e-acf5-4303-8cd5-6afec8fd917e.png"><br>
   Caso tenha alguma sugestão ou queira entrar em contato, fico a disposição 🥰💖
-</div><br><br>
+</div>
+<br>
+
 <div>
   <a href="https://www.linkedin.com/in/anna-luiza-camargo-fistarol/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
   <a href = "mailto:luizafistarol@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.instagram.com/annaluiza.711/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 </div>
+<br><br><br>
+
+<p>
+  <image
+  src="https://img.shields.io/github/languages/count/annaluizacamargo/BaymaxVital"
+  />
+  <image
+  src="https://img.shields.io/github/languages/top/annaluizacamargo/BaymaxVital"
+  />
+  <image
+  src="https://img.shields.io/github/last-commit/annaluizacamargo/BaymaxVital"
+  />
+  <image
+  src="https://img.shields.io/github/watchers/annaluizacamargo/BaymaxVital?style=social"
+  />
+</p>
