@@ -1,5 +1,6 @@
 import './App.css';
 import PainScaleMain from './components/ContainerApp/PainScaleMain';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
       </header>
       <PainScaleMain />
+      <Footer />
     </div>
   );
 }
