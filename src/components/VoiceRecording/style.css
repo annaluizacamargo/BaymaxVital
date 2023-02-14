@@ -78,6 +78,12 @@
     border: 2px var(--green-secondary) inset;
 }
 
+.voice-recording .buttons button:disabled {
+    background-color: var(--gray-primary);
+    cursor: pointer;
+    border: none;
+}
+
 
 
 /*Responsividade*/
