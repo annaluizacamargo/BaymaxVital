@@ -5,38 +5,8 @@
     box-sizing: border-box;
 }
 
-.voice-recording .buttons {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.voice-recording .buttons .audio-recorder {
-    margin-bottom: 1rem;
-    background-color: var(--green-primary);
-    width: fit-content;
-    height: fit-content;
-    border-radius: 30rem;
-    border: 2px var(--green-secondary) outset;
-}
-
-.voice-recording .buttons img.audio-recorder-mic {
-    filter: brightness(0.1) invert(.3) sepia(.1) hue-rotate(42deg) saturate(15000%);
-    height: 1.5rem;
-    padding: 0.5rem;
-}
-
-.voice-recording .buttons div.audio-recorder.recording {
-    width: fit-content;
-}
-
-.voice-recording .buttons span.audio-recorder-status {
-    display: none;
-}
-
-.voice-recording .buttons div.audio {
+.voice-recording div.audio {
+    min-width: 19rem;
     width: 50%;
     height: 100%;
     padding: 0.5rem 1rem;
@@ -44,16 +14,58 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 15px;
     box-sizing: border-box;
+    margin: 0 1rem;
 }
 
-.voice-recording .buttons div.audio audio {
+.voice-recording div.audio audio {
     padding: 0.5rem 0;
+    max-width: 15rem;
+}
+
+.voice-recording .buttons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.voice-recording .buttons .audio-recorder {
+    background-color: var(--green-secondary);
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px var(--green-secondary) outset;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+.voice-recording .buttons .audio-recorder:hover {
+    background-color: var(--green-tertiary);
+    cursor: pointer;
+    border: 2px var(--green-secondary) inset;
+}
+
+.voice-recording .buttons img.audio-recorder-mic {
+    height: 1.5rem;
+    margin: 0 auto;
+}
+
+.voice-recording .buttons div.audio-recorder.recording {
+    width: 10rem;
+}
+
+.voice-recording .buttons span.audio-recorder-status {
+    display: none;
 }
 
 .voice-recording .buttons button {
-    margin-top: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    height: 3rem;
     background-color: var(--green-secondary);
     font-weight: bolder;
     font-size: medium;
