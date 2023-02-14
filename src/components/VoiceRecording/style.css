@@ -35,7 +35,7 @@
 
 .voice-recording .buttons .recorder:hover {
     cursor: pointer;
-    filter: saturate(1.5);
+    filter: saturate(2);
     border-style: inset;
 }
 
@@ -88,13 +88,16 @@
 
 /*Responsividade*/
 @media (max-width: 759px) {
-    .voice-recording .buttons {
-        flex-direction: column;
+    .voice-recording div.audio {
+        min-height: 5rem;
+        max-width: 90%;
+        box-sizing: border-box;
+        margin-top: 1rem;
     }
 
-    .voice-recording .buttons div.audio {
-        min-height: 5rem;
-        width: 90%;
-        box-sizing: border-box;
+    .voice-recording {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 }
