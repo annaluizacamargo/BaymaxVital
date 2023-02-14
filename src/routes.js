@@ -4,6 +4,7 @@ import GoodScale from "./components/ContainerApp/GoodScale";
 import BadScale from "./components/ContainerApp/BadScale";
 import App from "./App";
 import BaymaxVitalEnd from "./components/ContainerApp/BaymaxVitalEnd";
+import Footer from "./components/Footer";
 
 const RoutesProject = () => {
    return(
@@ -14,6 +15,7 @@ const RoutesProject = () => {
                 <Route element={ <BadScale/> }  path="/bad-scale" />
                 <Route element={ <BaymaxVitalEnd /> }  path="/baymax-vital-end" />
            </Routes>
+           <Footer />
        </BrowserRouter>
    )
 }
