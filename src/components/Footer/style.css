@@ -57,3 +57,13 @@ footer ul.contact li a {
     text-decoration: none;
     color: var(--gray-tertiary);
 }
+
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    footer ul.contact li {
+        padding: 0.25rem 0.5rem;
+        margin: auto 0.25rem;
+    }
+}
