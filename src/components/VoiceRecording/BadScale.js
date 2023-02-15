@@ -1,13 +1,13 @@
 import BoxBaymax from '../BoxBaymax';
 import VoiceRecording from './components';
 import './style.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 
 const BadScale = () => {
     const navigate = useNavigate();
-    
+
     return (
         <div className='container-app'>
             <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')} />
@@ -24,6 +24,6 @@ const BadScale = () => {
             </div>
         </div>
     )
-}
+};
 
 export default BadScale;
