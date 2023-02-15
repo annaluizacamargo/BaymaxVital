@@ -1,15 +1,15 @@
 import './style.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 import { Button } from '@mui/material';
 
 const BaymaxVitalEnd = () => {
     const navigate = useNavigate();
-    
+
     return (
         <div className='container-app'>
-            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')}/>
+            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')} />
             <div className='box-baymax-end'>
                 <div className='img-baymax'>
                     <img src='./images/baymax-flower.svg'></img>
