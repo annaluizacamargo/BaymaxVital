@@ -6,6 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
+import { useNavigate } from "react-router-dom";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -15,41 +16,54 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function AlertDialogSlide() {
     const [open, setOpen] = React.useState(false);
-
-    const handleClickOpen = () => {
-        setOpen(true);
-        const medicalNumber = document.getElementById('medical-number')
+    const navigate = useNavigate();
+    const HandleClickOpen = () => {
+        const medicalNumber = document.getElementById('medical-number').value
         const namePatient = document.getElementById('patient-name').value
         const parentName = document.getElementById('parent-name').value
         const boxNumber = document.getElementById('patient-bed').textContent
         const date = document.getElementById('date').value
 
-        console.log(boxNumber)
+        const dadosLocalStorage = { namePatient: namePatient, parentName: parentName, boxNumber: boxNumber, dateScale: date }
+
+
+        console.log('dados localstorage', dadosLocalStorage)
+
 
 
         switch (true) {
-            case (medicalNumber.value == ''): {
+            case (medicalNumber == ''): {
                 setMessage('Número do Prontuário do Paciente.')
+                setOpen(true);
                 break
             }
             case (namePatient == ''): {
                 setMessage('Nome do Paciente.')
+                setOpen(true);
                 break
             }
             case (parentName == ''): {
                 setMessage('Nome do Responsável pelo Paciente.')
+                setOpen(true);
                 break
             }
             case (boxNumber == '' || boxNumber == 'selecione'): {
+                console.log(boxNumber)
                 setMessage('Leito do Paciente.')
+                setOpen(true);
                 break
             }
             case (date == ''): {
+                console.log(typeof date)
                 setMessage('Data da Avaliação')
+                setOpen(true);
+                console.log('oi')
                 break
             }
             default: {
-                console.log('oi')
+                console.log('default')
+                navigate('/baymax-vital-end')
+                localStorage.setItem(namePatient, JSON.stringify(dadosLocalStorage))
             }
         }
 
@@ -60,13 +74,12 @@ export default function AlertDialogSlide() {
     const handleClose = () => {
         setOpen(false);
     };
-
     const [message, setMessage] = React.useState('')
 
 
     return (
         <div>
-            <Button variant="outlined" onClick={handleClickOpen}>
+            <Button variant="outlined" onClick={HandleClickOpen}>
                 Acessar
             </Button>
             <Dialog
