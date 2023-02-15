@@ -62,7 +62,7 @@ export default function AlertDialogSlide() {
             }
             default: {
                 console.log('default')
-                navigate('/baymax-vital-end')
+                navigate('/pain-scale-assessment')
                 localStorage.setItem(namePatient, JSON.stringify(dadosLocalStorage))
             }
         }
