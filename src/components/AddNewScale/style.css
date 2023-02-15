@@ -19,7 +19,6 @@
     box-sizing: border-box;
 }
 
-
 .add-patient div.description img {
     max-height: 7rem;
     margin: 1rem;
@@ -74,4 +73,26 @@
     background-color: var(--pink-contrast);
     cursor: pointer;
     border: 2px var(--pink-contrast) inset;
+}
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    .add-patient {
+        flex-direction: column;
+    }
+
+    .add-patient div.description, .add-patient div.form {
+        width: 100%;
+    }
+
+    .add-patient div.form { 
+        width: 100%;
+        padding: 2rem;
+    }
+    
+    .add-patient div.form div.MuiFormControl-root {
+        margin: 1rem 0;
+        width: 90%;
+    }
 }
