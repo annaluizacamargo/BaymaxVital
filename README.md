@@ -35,11 +35,17 @@ Todos os desenhos do Baymax, bem como o design, foram feitos por mim utilizando 
 
 ## 🧠 Dificuldades e o que aprendi
 Tive a oportunidade de consolidar alguns conceitos de =
-> - JavaScript (arrow function e return).
+> - JavaScript (arrow function, return e LocalStorage).
 > - CSS (referenciar classes e passar estilos como props de pai para filho).
 > - ReactJS (routes; utilização dos Hook’s; criação de componentes; referenciar função, definindo a função no componente pai para ser executada no componente filho).
 
 Meu maior aprendizado neste projeto foi referente a utilização do Router, bem como adaptar componentes prontos para a minha necessidade, lendo bastante a documentação e navegando dentro dos arquivos utilizando a tecla de atalho ```"Ctrl + clique"```.
+<br><br>
+
+
+## 🔮 Alterações futuras
+- Atualmente estou estudando MySQL e, futuramente, Python, sendo assim em breve a primeira tela (formulário para acesso a escala de avaliação da dor) estará vinculada ao banco de dados hospitalar, realizando preenchimento automático de certos dados.
+- O BaymaxVital é uma ramificação de um projeto em desenvolvimento de um sistema hospitalar.
 <br><br>
 
 
