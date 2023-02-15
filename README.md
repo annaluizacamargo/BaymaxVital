@@ -75,7 +75,7 @@ https://user-images.githubusercontent.com/100868704/219104117-bcbce868-4bfd-4e4b
 ## 🌺 Forma de contato
 <div style="display: inline_block">
   <a href="https://www.linkedin.com/in/anna-luiza-camargo-fistarol/">
-  <img align="left" alt="Anna-pic" height="150em" style="border-radius:50px;" src="https://user-images.githubusercontent.com/100868704/218355863-c68ac6a5-f05f-47cc-adf9-034ee57e0537.png">
+  <img align="left" alt="Anna-pic" height="150em" style="border-radius:50px;" src="https://user-images.githubusercontent.com/100868704/219107511-ef3404d3-801a-4edf-9fe2-b65c2e43cb07.png">
   Caso tenha alguma sugestão ou queira entrar em contato, fico a disposição 🥰💖
 </div>
 <br>
@@ -85,4 +85,4 @@ https://user-images.githubusercontent.com/100868704/219104117-bcbce868-4bfd-4e4b
   <a href = "mailto:luizafistarol@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.instagram.com/annaluiza.711/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 </div>
-<br><br><br>
+<br><br>
