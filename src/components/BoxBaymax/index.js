@@ -3,6 +3,7 @@ import './style.css';
 const BoxBaymax = (props) => {
     const imgBaymax = props.img;
     const txtBox = props.text;
+
     return (
         <div className='box-baymax'>
             <div className='img-baymax'>
