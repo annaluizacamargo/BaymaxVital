@@ -3,11 +3,10 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
 export default function SliderPain(props) {
+  const [width, setWidth] = React.useState(window.innerWidth);
   const colorSlider = props.colorSlider;
   const functionChangeValue = props.changeValue;
   const painValue = props.value;
-
-  const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 760;
 
   React.useEffect(() => {
@@ -29,4 +28,4 @@ export default function SliderPain(props) {
       />
     </Box>
   );
-}
+};

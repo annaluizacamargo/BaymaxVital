@@ -6,16 +6,12 @@ import { Button } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
-//
-
-
 const PainScale = () => {
-    const { state } = useLocation();
-    const keyLocalStorage = state;
-    const getLocalStorage = JSON.parse(localStorage.getItem(state))
-    //setCurrentLocalStorage(getLocalStorage)
     const [painValue, setPainValue] = React.useState(0);
     const [colorSlider, setColorSlider] = React.useState('');
+    const { state } = useLocation();
+    const keyLocalStorage = state;
+    const getLocalStorage = JSON.parse(localStorage.getItem(state));
     const navigate = useNavigate();
 
     const changeColor = (painValue) => {
@@ -34,25 +30,28 @@ const PainScale = () => {
                 break;
             default:
                 setColorSlider('error');
-        }
-    }
+        };
+    };
 
     const changeValue = (event) => {
         const targetValue = event.target.value;
         setPainValue(parseInt(targetValue));
         changeColor(targetValue);
-    }
+    };
 
     return (
         <div className='pain-scale'>
             <h3>Em uma escala de 1 à 10, qual o nível da sua dor?</h3>
+
             <div className='container-slider'>
                 <div className='faces'>
                     <FacesScale value={painValue} changeValue={changeValue} />
                 </div>
+
                 <div className='slider'>
                     <SliderPain value={painValue} changeValue={changeValue} colorSlider={colorSlider || 'success'} />
                 </div>
+
                 <div className='description'>
                     <h5 className='one' id='zero'>Sem Dor</h5>
                     <h5 className='two' id='one'>Leve</h5>
@@ -62,6 +61,7 @@ const PainScale = () => {
                     <h5 className='two' id='five'>Pior Possível</h5>
                 </div>
             </div>
+
             <Button variant="btnConfirm" onClick={() => {
                 const setCurrentLocalStorage = { ...getLocalStorage, painScale: painValue }
                 localStorage.setItem(keyLocalStorage, JSON.stringify(setCurrentLocalStorage))

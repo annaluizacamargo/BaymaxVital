@@ -72,7 +72,7 @@ const customIcons = {
 function IconContainer(props) {
     const { value, ...other } = props;
     return <span {...other}>{customIcons[value].icon}</span>;
-}
+};
 
 IconContainer.propTypes = {
     value: PropTypes.number.isRequired,
@@ -92,4 +92,4 @@ export default function RadioGroupRating(props) {
             onChange={functionChangeValue}
         />
     );
-}
+};
