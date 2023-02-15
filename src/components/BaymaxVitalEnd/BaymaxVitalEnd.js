@@ -9,7 +9,8 @@ const BaymaxVitalEnd = () => {
 
     return (
         <div className='container-app'>
-            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')} />
+            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/pain-scale-assessment')} />
+            
             <div className='box-baymax-end'>
                 <div className='img-baymax'>
                     <img src='./images/baymax-flower.svg'></img>
@@ -20,7 +21,7 @@ const BaymaxVitalEnd = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default BaymaxVitalEnd;

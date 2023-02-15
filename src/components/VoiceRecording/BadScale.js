@@ -10,7 +10,7 @@ const BadScale = () => {
 
     return (
         <div className='container-app'>
-            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')} />
+            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/pain-scale-assessment')} />
             <div className='box'>
                 <BoxBaymax
                     img='./images/baymax-bad.svg'
@@ -23,7 +23,7 @@ const BadScale = () => {
                 />
             </div>
         </div>
-    )
+    );
 };
 
 export default BadScale;
