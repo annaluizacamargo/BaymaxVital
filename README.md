@@ -61,7 +61,8 @@ Meu maior aprendizado neste projeto foi referente a utilização do Router, bem 
 ## 💻 Rodando o projeto
 Observação: os testes referente ao layout e responsividade foram realizadas somente utilizando o Google Chrome, Android e Iphone.<br>
 
-VÍDEO AQUI !!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://user-images.githubusercontent.com/100868704/219104117-bcbce868-4bfd-4e4b-beac-66cf19c2f1df.mp4
+
 
 <br><br>
 
@@ -78,18 +79,3 @@ VÍDEO AQUI !!!!!!!!!!!!!!!!!!!!!!!!!!!
   <a href="https://www.instagram.com/annaluiza.711/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 </div>
 <br><br><br>
-
-<p>
-  <image
-  src="https://img.shields.io/github/languages/count/annaluizacamargo/BaymaxVital"
-  />
-  <image
-  src="https://img.shields.io/github/languages/top/annaluizacamargo/BaymaxVital"
-  />
-  <image
-  src="https://img.shields.io/github/last-commit/annaluizacamargo/BaymaxVital"
-  />
-  <image
-  src="https://img.shields.io/github/watchers/annaluizacamargo/BaymaxVital?style=social"
-  />
-</p>
