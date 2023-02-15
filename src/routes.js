@@ -12,7 +12,7 @@ const RoutesProject = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<App />} path="/" />
-                <Route element={<PainScaleMain />} path="/scale-evaluation" />
+                <Route element={<PainScaleMain />} path="/pain-scale-assessment" />
                 <Route element={<GoodScale />} path="/good-scale" />
                 <Route element={<BadScale />} path="/bad-scale" />
                 <Route element={<BaymaxVitalEnd />} path="/baymax-vital-end" />
