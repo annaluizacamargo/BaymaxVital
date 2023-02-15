@@ -1,9 +1,9 @@
-![Group 15](https://user-images.githubusercontent.com/100868704/218365682-7be7ee66-ef5a-4a1d-8227-0cde45097a0f.svg)
+<a href="https://baymax-vital.vercel.app/"> <img src="https://user-images.githubusercontent.com/100868704/218365682-7be7ee66-ef5a-4a1d-8227-0cde45097a0f.svg"> </a>
 
 ## 🚀 Proposta do Desafio
 Bem-vindo(a) ao "BaymaxVital", um projeto que havia pensado muito antes de virar desenvolvedora / enfermeira, e que criou vida a partir do ReactJS, surgindo desta forma o 💻<https://baymax-vital.vercel.app/>.
 
-![Resultado Final (1)](https://user-images.githubusercontent.com/100868704/218366018-c7e21be7-43fb-433a-a98c-7499e5811fc1.jpg)
+<a href="https://baymax-vital.vercel.app/"> <img src="https://user-images.githubusercontent.com/100868704/218366018-c7e21be7-43fb-433a-a98c-7499e5811fc1.jpg"> </a>
 <br><br>
 
 
@@ -50,12 +50,18 @@ Meu maior aprendizado neste projeto foi referente a utilização do Router, bem 
 
 
 ## 🔧 Tecnologias utilizadas
-![logo-react 1](https://user-images.githubusercontent.com/100868704/218368934-02db1d0b-cd34-4810-893f-237bfbd55c88.svg)
-![brand-javascript 1](https://user-images.githubusercontent.com/100868704/218368943-0c39cf45-41f7-41a5-9e9f-86d0911a15b1.svg)
-![logo-css3 1](https://user-images.githubusercontent.com/100868704/218368953-5dc4e507-22b6-416c-8d27-101e5a3355f6.svg)
-![html5 1](https://user-images.githubusercontent.com/100868704/218369012-176829d9-37f3-490c-b034-21bfc04a17eb.svg)
-![figma-logo-light 1](https://user-images.githubusercontent.com/100868704/218368975-1765401e-adce-42ee-b1f7-3859c4d29198.svg)
-![git 1](https://user-images.githubusercontent.com/100868704/218368987-b4f05e20-faf7-4774-b2f3-f793b132b5bc.svg)
+  > **ReactJS • JavaScript • HTML • CSS • Figma • Git**
+<div>
+  <a href="https://github.com/annaluizacamargo">
+
+  ![logo-react 1](https://user-images.githubusercontent.com/100868704/218358133-7e5bcdf6-c57f-4c8b-9c32-ce1417ea5b93.svg)
+  ![brand-javascript 1](https://user-images.githubusercontent.com/100868704/218358267-b46e966a-3fc6-439b-ac1e-caf61b086388.svg)
+  ![html5 1](https://user-images.githubusercontent.com/100868704/218358278-b5ecd208-b091-4442-989d-72bc7d0ef528.svg)
+  ![logo-css3 1](https://user-images.githubusercontent.com/100868704/218358284-7b9e67aa-0a83-4bc6-957a-019a23ff822b.svg)
+  ![figma-logo-light 1](https://user-images.githubusercontent.com/100868704/218358295-526264d2-f303-445b-8e7f-814944c13f9a.svg)
+  ![git 1](https://user-images.githubusercontent.com/100868704/218358301-256ca99d-94f8-4c54-bcf2-233062c0685e.svg)
+</div>
+<br>
 
 
 ## 💻 Rodando o projeto
@@ -68,7 +74,8 @@ https://user-images.githubusercontent.com/100868704/219104117-bcbce868-4bfd-4e4b
 
 ## 🌺 Forma de contato
 <div style="display: inline_block">
-  <img align="left" alt="Anna-pic" height="150" style="border-radius:50px;" src="https://user-images.githubusercontent.com/100868704/218369216-c2cd411e-acf5-4303-8cd5-6afec8fd917e.png"><br>
+  <a href="https://www.linkedin.com/in/anna-luiza-camargo-fistarol/">
+  <img align="left" alt="Anna-pic" height="150em" style="border-radius:50px;" src="https://user-images.githubusercontent.com/100868704/218355863-c68ac6a5-f05f-47cc-adf9-034ee57e0537.png">
   Caso tenha alguma sugestão ou queira entrar em contato, fico a disposição 🥰💖
 </div>
 <br>
