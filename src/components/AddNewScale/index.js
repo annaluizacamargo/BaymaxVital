@@ -36,7 +36,7 @@ const AddNewScale = () => {
             <div className='description'>
                 <img src='./images/baymax-vital.svg'></img>
                 <h3>Bem-vindo ao <b>BaymaxVital</b>, para utilizar esta ferramenta favor preencher os campos com os dados do paciente.</h3>
-                <h5>Caso seja seu primeiro acesso, <a href='htps://youtube.com'>acesse aqui o nosso tutorial</a>.</h5>
+                <h5>Caso seja seu primeiro acesso, <a href='https://youtu.be/Huw4bNnRbuk'>acesse aqui o nosso tutorial</a>.</h5>
             </div>
 
             <form className='form'>
