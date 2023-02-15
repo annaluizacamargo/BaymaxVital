@@ -1,23 +1,25 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import GoodScale from "./components/ContainerApp/GoodScale";
-import BadScale from "./components/ContainerApp/BadScale";
 import App from "./App";
-import BaymaxVitalEnd from "./components/ContainerApp/BaymaxVitalEnd";
+import PainScaleMain from "./components/PainScale/PainScaleMain";
+import GoodScale from "./components/VoiceRecording/GoodScale";
+import BadScale from "./components/VoiceRecording/BadScale";
+import BaymaxVitalEnd from "./components/BaymaxVitalEnd/BaymaxVitalEnd";
 import Footer from "./components/Footer";
 
 const RoutesProject = () => {
-   return(
-       <BrowserRouter>
-           <Routes>
-                <Route element={ <App/> }  path="/" />
-                <Route element={ <GoodScale/> }  path="/good-scale" />
-                <Route element={ <BadScale/> }  path="/bad-scale" />
-                <Route element={ <BaymaxVitalEnd /> }  path="/baymax-vital-end" />
-           </Routes>
-           <Footer />
-       </BrowserRouter>
-   )
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route element={<App />} path="/" />
+                <Route element={<PainScaleMain />} path="/scale-evaluation" />
+                <Route element={<GoodScale />} path="/good-scale" />
+                <Route element={<BadScale />} path="/bad-scale" />
+                <Route element={<BaymaxVitalEnd />} path="/baymax-vital-end" />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
+    )
 }
 
 export default RoutesProject;

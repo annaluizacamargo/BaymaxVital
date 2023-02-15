@@ -1,0 +1,162 @@
+.pain-scale {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.pain-scale h3 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.pain-scale .container-slider {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pain-scale .container-slider .faces .MuiRating-icon {
+    transform: none;
+    transition: none;
+    scale: 1;
+    pointer-events: none;
+    cursor: default;
+}
+
+.pain-scale .container-slider .faces .MuiRating-root {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pain-scale .container-slider .faces span label:has(#highlight-selected-only-empty) {
+    display: none;
+}
+
+.pain-scale .container-slider .faces span label,
+.pain-scale .container-slider .faces span label span {
+    width: fit-content;
+    height: fit-content;
+}
+
+.pain-scale .container-slider .faces span label span svg {
+    font-size: 2.5rem;
+}
+
+.pain-scale .container-slider .slider {
+    padding-left: calc(2.5rem/2);
+    padding-right: calc(2.5rem/2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pain-scale .description {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 18% 18% 18% 18% 18%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0;
+    padding-bottom: 1rem;
+}
+
+.pain-scale .description h5 {
+    padding: 0 0.5rem;
+    text-align: center;
+    margin: auto 0;
+    word-wrap: break-word;
+    color: var(--error);
+}
+
+.pain-scale .description h5 .one {
+    min-width: calc(100%/11);
+    color: var(--green-secondary);
+}
+
+.pain-scale .description h5 .two {
+    width: calc((100%-(100%/11))/5);
+}
+
+.pain-scale .description h5#zero,
+.pain-scale .description h5#one {
+    color: var(--success);
+}
+
+.pain-scale .description h5#two {
+    color: var(--secondary);
+}
+
+.pain-scale .description h5#three {
+    color: var(--primary);
+}
+
+.pain-scale .description h5#four {
+    color: var(--warning);
+}
+
+.pain-scale button {
+    background-color: var(--green-secondary);
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px var(--green-secondary) outset;
+}
+
+.pain-scale button:hover {
+    background-color: var(--green-tertiary);
+    cursor: pointer;
+    border: 2px var(--green-secondary) inset;
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    .pain-scale .container-slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .pain-scale .container-slider .faces .MuiRating-root {
+        flex-direction: column-reverse;
+    }
+
+    .pain-scale .container-slider .slider {
+        margin: auto 0;
+        padding: 0 1rem;
+        width: fit-content;
+    }
+
+    .pain-scale .container-slider .slider span.MuiSlider-root {
+        height: 25rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    
+    .pain-scale div.description {
+        padding: 0;
+        padding-top: 2rem;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 27rem;
+    }
+
+    .pain-scale div.description h5 {
+        margin: 0;
+    }
+
+    .pain-scale button {
+        margin-top: 2rem;
+    }
+}

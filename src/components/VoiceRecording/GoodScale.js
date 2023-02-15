@@ -1,24 +1,24 @@
 import BoxBaymax from '../BoxBaymax';
-import VoiceRecording from '../VoiceRecording';
+import VoiceRecording from './components';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom";
 
-const BadScale = () => {
+const GoodScale = () => {
     const navigate = useNavigate();
     
     return (
         <div className='container-app'>
-            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')} />
+            <FontAwesomeIcon icon={faChevronLeft} className='btn-return' onClick={() => navigate('/')}/>
             <div className='box'>
                 <BoxBaymax
-                    img='./images/baymax-bad.svg'
-                    text='Porque você está se sentindo assim? O que podemos fazer para você se sentir melhor?'
+                    img='./images/baymax-good.svg'
+                    text='Fico feliz que está se sentindo bem! O que te deixaria ainda melhor?'
                 />
 
                 <VoiceRecording
-                    color='blue'
+                    color='orange'
                     namePatient='Anna'
                 />
             </div>
@@ -26,4 +26,9 @@ const BadScale = () => {
     )
 }
 
-export default BadScale;
+//<BoxBaymax />
+//<VoiceRecording color='blue' />
+//<VoiceRecording color='orange' />
+//<PainScale />
+
+export default GoodScale;

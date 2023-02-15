@@ -1,4 +1,4 @@
-import './style-end.css';
+import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom";

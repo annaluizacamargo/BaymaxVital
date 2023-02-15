@@ -1,5 +1,5 @@
 import './App.css';
-import PainScaleMain from './components/ContainerApp/PainScaleMain';
+import PainScaleMain from './components/PainScale/PainScaleMain';
 
 function App() {
   return (

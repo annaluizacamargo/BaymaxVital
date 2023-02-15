@@ -1,0 +1,103 @@
+.voice-recording {
+    display: flex;
+    padding: 2rem;
+    height: fit-content;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.voice-recording div.audio {
+    min-width: 19rem;
+    min-height: 7rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 1rem;
+}
+
+.voice-recording div.audio audio {
+    padding: 0.5rem 0;
+    max-width: 15rem;
+}
+
+.voice-recording .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 1rem;
+}
+
+.voice-recording .buttons .recorder:hover {
+    cursor: pointer;
+    filter: saturate(2);
+    border-style: inset;
+}
+
+.voice-recording .buttons .audio-recorder {
+    background-color:  transparent;
+    font-weight: bolder;
+    font-size: medium;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.voice-recording .buttons img.audio-recorder-mic {
+    height: 1.5rem;
+    margin: 0 auto;
+}
+
+.voice-recording .buttons div.audio-recorder.recording {
+    width: 10rem;
+}
+
+.voice-recording .buttons span.audio-recorder-status {
+    display: none;
+}
+
+.voice-recording .buttons button {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--green-secondary);
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px var(--green-secondary) outset;
+}
+
+.voice-recording .buttons button:hover {
+    background-color: var(--green-tertiary);
+    cursor: pointer;
+    border: 2px var(--green-secondary) inset;
+}
+
+.voice-recording .buttons button:disabled {
+    background-color: var(--gray-primary);
+    cursor: pointer;
+    border: none;
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 759px) {
+    .voice-recording div.audio {
+        min-height: 5rem;
+        max-width: 90%;
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+
+    .voice-recording {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}

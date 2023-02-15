@@ -1,103 +1,43 @@
-.voice-recording {
+.container-app {
+    background-color: var(--orange-primary);
+    padding: 1rem;
+    height: 100%;
+    box-sizing: border-box;
     display: flex;
-    padding: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-app .btn-return {
+    background-color: var(--orange-secondary);
+    padding: 0.5rem 0.75rem;
+    border-radius: 30px;
+    border: 2px var(--orange-secondary) outset;
+}
+
+.container-app .btn-return:hover {
+    background-color: var(--warning);
+    border: 2px var(--orange-secondary) inset;
+    cursor: pointer;
+}
+
+.container-app div.box {
+    background-color: var(--white);
+    margin: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-bottom: 1rem;
     height: fit-content;
-    box-sizing: border-box;
-    align-items: flex-start;
-    justify-content: center;
 }
-
-.voice-recording div.audio {
-    min-width: 19rem;
-    min-height: 7rem;
-    padding: 0.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin: 0 1rem;
-}
-
-.voice-recording div.audio audio {
-    padding: 0.5rem 0;
-    max-width: 15rem;
-}
-
-.voice-recording .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 1rem;
-}
-
-.voice-recording .buttons .recorder:hover {
-    cursor: pointer;
-    filter: saturate(2);
-    border-style: inset;
-}
-
-.voice-recording .buttons .audio-recorder {
-    background-color:  transparent;
-    font-weight: bolder;
-    font-size: medium;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 5px;
-    margin: 0;
-}
-
-.voice-recording .buttons img.audio-recorder-mic {
-    height: 1.5rem;
-    margin: 0 auto;
-}
-
-.voice-recording .buttons div.audio-recorder.recording {
-    width: 10rem;
-}
-
-.voice-recording .buttons span.audio-recorder-status {
-    display: none;
-}
-
-.voice-recording .buttons button {
-    margin-top: 1rem;
-    width: 10rem;
-    height: 3rem;
-    background-color: var(--green-secondary);
-    font-weight: bolder;
-    font-size: medium;
-    border: 2px var(--green-secondary) outset;
-}
-
-.voice-recording .buttons button:hover {
-    background-color: var(--green-tertiary);
-    cursor: pointer;
-    border: 2px var(--green-secondary) inset;
-}
-
-.voice-recording .buttons button:disabled {
-    background-color: var(--gray-primary);
-    cursor: pointer;
-    border: none;
-}
-
-
 
 /*Responsividade*/
 @media (max-width: 759px) {
-    .voice-recording div.audio {
-        min-height: 5rem;
-        max-width: 90%;
-        box-sizing: border-box;
-        margin-top: 1rem;
-    }
-
-    .voice-recording {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
+    .container-app div.box {
+        margin: 2rem 0;
     }
 }
