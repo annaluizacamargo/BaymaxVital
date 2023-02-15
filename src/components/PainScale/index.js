@@ -1,5 +1,5 @@
 import BoxBaymax from '../BoxBaymax';
-import PainScale from './components';
+import PainScale from './components/PainScale';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';

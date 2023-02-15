@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import App from "./App";
-import PainScaleMain from "./components/PainScale/PainScaleMain";
+import PainScaleMain from "./components/PainScale";
 import GoodScale from "./components/VoiceRecording/GoodScale";
 import BadScale from "./components/VoiceRecording/BadScale";
 import BaymaxVitalEnd from "./components/BaymaxVitalEnd/BaymaxVitalEnd";
