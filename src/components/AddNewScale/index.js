@@ -80,7 +80,7 @@ const AddNewScale = () => {
                 <h3>Bem-vindo ao <b>BaymaxVitae</b>, para utilizar esta ferramenta favor preencher os campos com os dados do paciente.</h3>
                 <h5>Caso seja seu primeiro acesso, <a href='htps://youtube.com'>acesse aqui o nosso tutorial</a>.</h5>
             </div>
-            <div className='form'>
+            <form className='form'>
                 
                 <TextField
                     required
@@ -123,7 +123,7 @@ const AddNewScale = () => {
                 />
                 
                 <AlertDialogSlide />
-            </div>
+            </form>
         </div>
     )
 };
