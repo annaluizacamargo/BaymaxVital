@@ -12,76 +12,67 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-
-
 export default function AlertDialogSlide() {
     const [open, setOpen] = React.useState(false);
+    const [message, setMessage] = React.useState('');
     const navigate = useNavigate();
+
     const HandleClickOpen = () => {
-        const medicalNumber = document.getElementById('medical-number').value
-        const namePatient = document.getElementById('patient-name').value
-        const parentName = document.getElementById('parent-name').value
-        const boxNumber = document.getElementById('patient-bed').textContent
-        const date = document.getElementById('date').value
-
-        const dadosLocalStorage = { namePatient: namePatient, parentName: parentName, boxNumber: boxNumber, dateScale: date }
-
-
-        console.log('dados localstorage', dadosLocalStorage)
-
-
+        const medicalNumber = document.getElementById('medical-number').value;
+        const namePatient = document.getElementById('patient-name').value;
+        const parentName = document.getElementById('parent-name').value;
+        const boxNumber = document.getElementById('patient-bed').textContent;
+        const date = document.getElementById('date').value;
+        const dadosLocalStorage = {
+            namePatient: namePatient,
+            parentName: parentName,
+            boxNumber: boxNumber,
+            dateScale: date
+        };
 
         switch (true) {
             case (medicalNumber == ''): {
-                setMessage('Número do Prontuário do Paciente.')
+                setMessage('Número do Prontuário do Paciente.');
                 setOpen(true);
-                break
-            }
+                break;
+            };
             case (namePatient == ''): {
-                setMessage('Nome do Paciente.')
+                setMessage('Nome do Paciente.');
                 setOpen(true);
-                break
-            }
+                break;
+            };
             case (parentName == ''): {
-                setMessage('Nome do Responsável pelo Paciente.')
+                setMessage('Nome do Responsável pelo Paciente.');
                 setOpen(true);
-                break
-            }
+                break;
+            };
             case (boxNumber == '' || boxNumber == 'selecione'): {
-                console.log(boxNumber)
-                setMessage('Leito do Paciente.')
+                setMessage('Leito do Paciente.');
                 setOpen(true);
-                break
-            }
+                break;
+            };
             case (date == ''): {
-                console.log(typeof date)
-                setMessage('Data da Avaliação')
+                setMessage('Data da Avaliação');
                 setOpen(true);
-                console.log('oi')
-                break
-            }
+                break;
+            };
             default: {
-                console.log('default')
-                navigate('/pain-scale-assessment', {state: medicalNumber})
-                localStorage.setItem(medicalNumber, JSON.stringify(dadosLocalStorage))
-            }
-        }
-
-
-
+                navigate('/pain-scale-assessment', { state: medicalNumber });
+                localStorage.setItem(medicalNumber, JSON.stringify(dadosLocalStorage));
+            };
+        };
     };
 
     const handleClose = () => {
         setOpen(false);
     };
-    const [message, setMessage] = React.useState('')
-
 
     return (
         <div>
             <Button variant="outlined" onClick={HandleClickOpen}>
                 Acessar
             </Button>
+
             <Dialog
                 open={open}
                 TransitionComponent={Transition}
