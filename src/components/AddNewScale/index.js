@@ -31,8 +31,8 @@ const AddNewScale = () => {
         <div className='add-patient'>
             <div className='description'>
                 <img src='./images/baymax-vital.svg'></img>
-                <h2>Bem-vindo ao <b>BaymaxVitae</b>, para utilizar esta ferramenta favor preencher os campos com os dados do paciente.</h2>
-                <h3>Caso seja seu primeiro acesso, acesse aqui o nosso tutorial.</h3>
+                <h3>Bem-vindo ao <b>BaymaxVitae</b>, para utilizar esta ferramenta favor preencher os campos com os dados do paciente.</h3>
+                <h5>Caso seja seu primeiro acesso, <a href='htps://youtube.com'>acesse aqui o nosso tutorial</a>.</h5>
             </div>
             <div className='form'>
                 <TextField
@@ -56,7 +56,6 @@ const AddNewScale = () => {
                     id="select-patient-bed"
                     select
                     label="Leito"
-                    helperText="Por favor, selecione o leito"
                 >
                     {box.map((option) => (
                         <MenuItem key={option.value} value={option.value}>
