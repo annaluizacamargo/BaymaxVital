@@ -1,4 +1,3 @@
-import './App.css';
 import AddNewScale from './components/AddNewScale';
 
 function App() {
@@ -7,6 +6,6 @@ function App() {
       <AddNewScale />
     </div>
   );
-}
+};
 
 export default App;
