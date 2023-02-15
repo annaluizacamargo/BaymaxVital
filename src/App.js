@@ -1,10 +1,10 @@
 import './App.css';
-import PainScaleMain from './components/PainScale/PainScaleMain';
+import AddNewScale from './components/AddNewScale';
 
 function App() {
   return (
     <div className="App">
-      <PainScaleMain />
+      <AddNewScale />
     </div>
   );
 }
