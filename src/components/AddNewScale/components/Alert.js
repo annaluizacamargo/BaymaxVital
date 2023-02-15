@@ -62,8 +62,8 @@ export default function AlertDialogSlide() {
             }
             default: {
                 console.log('default')
-                navigate('/pain-scale-assessment')
-                localStorage.setItem(namePatient, JSON.stringify(dadosLocalStorage))
+                navigate('/pain-scale-assessment', {state: medicalNumber})
+                localStorage.setItem(medicalNumber, JSON.stringify(dadosLocalStorage))
             }
         }
 

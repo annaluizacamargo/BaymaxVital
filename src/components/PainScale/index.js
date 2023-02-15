@@ -4,7 +4,7 @@ import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-const PainScaleMain = () => {
+const PainScaleMain = (props) => {
     return (
         <div className='container-app'>
             <FontAwesomeIcon icon={faChevronLeft} className='btn-return' />
@@ -14,7 +14,7 @@ const PainScaleMain = () => {
                     text='Olá, eu sou Baymax, seu companheiro de cuidados pessoais de saúde'
                 />
 
-                <PainScale />
+                <PainScale key={props.key} />
             </div>
         </div>
     )

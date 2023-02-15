@@ -4,8 +4,16 @@ import SliderPain from './SliderPain';
 import FacesScale from './FacesScale';
 import { Button } from '@mui/material';
 import { useNavigate } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+
+//
+
 
 const PainScale = () => {
+    const { state } = useLocation();
+    const keyLocalStorage = state;
+    const getLocalStorage = JSON.parse(localStorage.getItem(state))
+    //setCurrentLocalStorage(getLocalStorage)
     const [painValue, setPainValue] = React.useState(0);
     const [colorSlider, setColorSlider] = React.useState('');
     const navigate = useNavigate();
@@ -54,7 +62,13 @@ const PainScale = () => {
                     <h5 className='two' id='five'>Pior Possível</h5>
                 </div>
             </div>
-            <Button variant="btnConfirm" onClick={() => painValue < 4? navigate('/good-scale') : navigate('/bad-scale')}>Confirmar</Button>
+            <Button variant="btnConfirm" onClick={() => {
+                const setCurrentLocalStorage = { ...getLocalStorage, painScale: painValue }
+                localStorage.setItem(keyLocalStorage, JSON.stringify(setCurrentLocalStorage))
+                painValue < 4
+                    ? navigate('/good-scale')
+                    : navigate('/bad-scale')
+            }}>Confirmar</Button>
         </div>
     );
 };
