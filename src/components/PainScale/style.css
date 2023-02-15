@@ -35,6 +35,8 @@
     height: fit-content;
 }
 
+
+
 /*Responsividade*/
 @media (max-width: 759px) {
     .container-app div.box {

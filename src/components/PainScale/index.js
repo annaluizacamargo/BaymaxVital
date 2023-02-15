@@ -1,6 +1,6 @@
+import './style.css';
 import BoxBaymax from '../BoxBaymax';
 import PainScale from './components/PainScale';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,6 +8,7 @@ const PainScaleMain = (props) => {
     return (
         <div className='container-app'>
             <FontAwesomeIcon icon={faChevronLeft} className='btn-return' />
+
             <div className='box'>
                 <BoxBaymax
                     img='./images/baymax.svg'
@@ -17,7 +18,7 @@ const PainScaleMain = (props) => {
                 <PainScale key={props.key} />
             </div>
         </div>
-    )
+    );
 };
 
 export default PainScaleMain;
