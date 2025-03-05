@@ -20,7 +20,7 @@ Elaborar um site web responsivo para facilitar a mensuração da dor na pediatri
 
 
 ## 🎨 Design
-Todos os desenhos do Baymax, bem como o design, foram feitos por mim utilizando o [Figma](https://www.figma.com/file/DjW82a3ghtOBIzUzU3yZGY/BaymaxVital?node-id=110%3A295&t=sPAu1QuffWwPMGZh-1), e caso queira saber um pouquinho mais do processo de elaboração e criação, fiz um breve benchmarking, elenquei possíveis referências e ideias de layout, escolhi as cores que possuíssem acessibilidade visual, e todo esse trajeto até chegar neste resultado final é possível visualizar no meu repositório do [Figma](https://www.figma.com/file/DjW82a3ghtOBIzUzU3yZGY/BaymaxVital?node-id=110%3A295&t=sPAu1QuffWwPMGZh-1).
+Todos os desenhos do Baymax, bem como o design, foram feitos por mim utilizando o Figma, e caso queira saber um pouquinho mais do processo de elaboração e criação, fiz um breve benchmarking, elenquei possíveis referências e ideias de layout, escolhi as cores que possuíssem acessibilidade visual, e todo esse trajeto até chegar neste resultado final é possível visualizar no meu repositório do Figma entrando em contato comigo.
 <br><br>
 
 
